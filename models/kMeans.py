@@ -2,7 +2,7 @@ import numpy as np
 
 def kMeans(X, k=2, num_iterations=5):
     m, n = X.shape
-
+    
     # Initialize parameters
     centroids = X[np.random.permutation(m)[:k]]
     idx = np.zeros(m)
